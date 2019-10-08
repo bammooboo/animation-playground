@@ -14,23 +14,23 @@ export default () => {
   function createSaturn() {
     //create inner spherical planet
     let geometry = new THREE.SphereGeometry(0.4, 30, 30);
-    let material = new THREE.MeshBasicMaterial({color: 0x8d5524, wireframe: true});
+    let material = new THREE.MeshBasicMaterial({color: 0x191919, wireframe: true});
     planet = new THREE.Mesh(geometry, material);
     saturnScene.add(planet);
 
     // //create rings
-    geometry = new THREE.TorusGeometry(0.51, 0.07, 2, 70);
-    material = new THREE.MeshBasicMaterial({color: 0xffe39f, wireframe: true});
+    geometry = new THREE.TorusGeometry(0.51, 0.07, 2, 50);
+    material = new THREE.MeshBasicMaterial({color: 0x666666, wireframe: true});
     let ring = new THREE.Mesh(geometry, material);
     rings.push(ring);
 
-    geometry = new THREE.TorusGeometry(0.69, 0.07, 2, 70);
-    material = new THREE.MeshBasicMaterial({color: 0xffad60, wireframe: true});
+    geometry = new THREE.TorusGeometry(0.69, 0.07, 2, 50);
+    material = new THREE.MeshBasicMaterial({color: 0x4c4c4c, wireframe: true});
     ring = new THREE.Mesh(geometry, material);
     rings.push(ring);
 
-    geometry = new THREE.TorusGeometry(0.85, 0.07, 2, 70);
-    material = new THREE.MeshBasicMaterial({color: 0xeac086, wireframe: true});
+    geometry = new THREE.TorusGeometry(0.85, 0.07, 2, 50);
+    material = new THREE.MeshBasicMaterial({color: 0x323232, wireframe: true});
     ring = new THREE.Mesh(geometry, material);
     rings.push(ring);
 
