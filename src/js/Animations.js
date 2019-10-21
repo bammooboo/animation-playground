@@ -2,12 +2,13 @@ import saturnLoop from "./animations/saturnLoop";
 import fragments from "./animations/fragments";
 import interactions from "./animations/interactions";
 import mouse from "./animations/mouse";
-import spheres from "./spheres";
-import sphereCreator from "./sphereCreator";
-import balloons from "./balloons";
+import spheres from "./animations/spheres";
+import sphereCreator from "./animations/sphereCreator";
+import balloons from "./animations/balloons";
 import textures from "./animations/textures";
 import panoramaTexture from "./animations/panoramaTexture";
 import shadows from "./animations/shadows";
+import pyramids from "./animations/pyramids";
 
 export default () => {
   function init() {
@@ -20,7 +21,8 @@ export default () => {
     // balloons();
     // textures();
     // panoramaTexture();
-    shadows();
+    // shadows();
+    pyramids();
   }
 
   init();
