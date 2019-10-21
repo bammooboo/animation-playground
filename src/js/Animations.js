@@ -7,18 +7,20 @@ import sphereCreator from "./sphereCreator";
 import balloons from "./balloons";
 import textures from "./animations/textures";
 import panoramaTexture from "./animations/panoramaTexture";
+import shadows from "./animations/shadows";
 
 export default () => {
   function init() {
-    saturnLoop();
-    fragments();
-    interactions();
-    mouse();
-    spheres();
-    sphereCreator();
-    balloons();
-    textures();
-    panoramaTexture();
+    // saturnLoop();
+    // fragments();
+    // interactions();
+    // mouse();
+    // spheres();
+    // sphereCreator();
+    // balloons();
+    // textures();
+    // panoramaTexture();
+    shadows();
   }
 
   init();
