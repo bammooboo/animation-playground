@@ -10,6 +10,7 @@ import panoramaTexture from "./animations/panoramaTexture";
 import shadows from "./animations/shadows";
 import pyramids from "./animations/pyramids";
 import floatingSpheres from "./animations/floatingSpheres";
+import torus from "./animations/torus";
 
 export default () => {
   function init() {
@@ -24,7 +25,8 @@ export default () => {
     // panoramaTexture();
     // shadows();
     // pyramids();
-    floatingSpheres();
+    // floatingSpheres();
+    torus();
   }
 
   init();
