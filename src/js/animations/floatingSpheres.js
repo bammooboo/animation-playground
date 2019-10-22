@@ -13,7 +13,7 @@ export default () => {
   class Particle {
     constructor() {
       let geometry = new THREE.SphereGeometry(0.5, 30, 30);
-      let material = new THREE.MeshPhongMaterial({ color: 0xffffff, shininess: 100, specular: 0xafeeee, side: THREE.DoubleSide });
+      let material = new THREE.MeshPhongMaterial({ color: 0x004e4e, shininess: 100, specular: 0xafeeee, side: THREE.DoubleSide });
       this.mesh = new THREE.Mesh(geometry, material);
       this.mesh.position.x = randomInRange(-15, 15);
       this.mesh.position.y = randomInRange(-5, 5);
@@ -51,7 +51,7 @@ export default () => {
   }
 
   function createParticles() {
-    for(let i = 1; i <= 50; i++) {
+    for(let i = 1; i <= 100; i++) {
       let p = new Particle();
       particles.push(p);
       floatScene.add(p.mesh);
@@ -60,7 +60,7 @@ export default () => {
 
   function floatingAnimation() {
     floatScene = new THREE.Scene();
-    floatScene.background = new THREE.Color(0x000000);
+    floatScene.background = new THREE.Color(0x001b1b);
 
     floatCamera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
     floatCamera.position.z = 20;
